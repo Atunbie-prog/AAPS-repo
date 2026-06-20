@@ -1,0 +1,26 @@
+.rotating-word {
+  display: inline-block;
+  position: relative;
+  color: var(--gold-500);
+}
+
+.rotating-word__inner {
+  display: inline-block;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.rotating-word__inner.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rotating-word__inner.is-hidden {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotating-word__inner {
+    transition: none;
+  }
+}

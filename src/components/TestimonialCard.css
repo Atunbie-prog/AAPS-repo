@@ -1,0 +1,28 @@
+.testimonial-card {
+  margin: 0;
+  background: var(--green-50);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  position: relative;
+  height: 100%;
+}
+
+.testimonial-card__mark {
+  color: var(--gold-500);
+  margin-bottom: 1rem;
+}
+
+.testimonial-card__quote {
+  color: var(--ink-900);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-card__name {
+  font-weight: 700;
+  font-size: 0.86rem;
+  color: var(--green-900);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}

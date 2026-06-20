@@ -1,0 +1,28 @@
+.cta-section__inner {
+  text-align: center;
+  max-width: var(--prose-max);
+  margin: 0 auto;
+}
+
+.cta-section__sub {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin: 1.1rem 0 2.25rem;
+}
+
+.cta-section__buttons {
+  display: flex;
+  gap: 1.1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 520px) {
+  .cta-section__buttons {
+    flex-direction: column;
+  }
+  .cta-section__buttons .btn {
+    justify-content: center;
+  }
+}

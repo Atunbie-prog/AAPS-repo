@@ -1,0 +1,44 @@
+.banner-strip {
+  background: var(--gold-500);
+}
+
+.banner-strip__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 5%;
+  text-align: center;
+}
+
+.banner-strip__icon {
+  display: flex;
+  color: var(--green-900);
+  flex-shrink: 0;
+}
+
+.banner-strip__text {
+  color: var(--green-900);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: -0.005em;
+}
+
+.banner-strip__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--green-900);
+  border-bottom: 1.5px solid var(--green-900);
+  padding-bottom: 1px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .banner-strip__text {
+    font-size: 0.92rem;
+  }
+}

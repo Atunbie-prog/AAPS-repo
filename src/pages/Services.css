@@ -1,0 +1,87 @@
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--green-700);
+}
+
+.service-card__icon {
+  font-size: 1.9rem;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-100);
+  color: var(--green-900);
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+.service-card__title {
+  font-size: 1.32rem;
+  color: var(--green-900);
+  margin-bottom: 0.9rem;
+}
+
+.service-card__intro {
+  font-size: 0.98rem;
+  color: var(--ink-600);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.service-card__points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.service-card__points li {
+  font-size: 0.91rem;
+  color: var(--ink-600);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.55;
+}
+
+.service-card__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-500);
+}
+
+.service-card .btn {
+  align-self: flex-start;
+}
+
+@media (max-width: 860px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .service-card {
+    padding: 2.25rem 1.75rem;
+  }
+}
